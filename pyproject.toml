@@ -1,0 +1,20 @@
+[project]
+name = "bigdata-datasets"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "e-kombiwo-ece", email = "eliesamson.kombiwo@edu.ece.fr" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "faker>=40.41.0",
+]
+
+[project.scripts]
+dataset-users = "bigdata_datasets.dataset_users:main"
+dataset-orders = "bigdata_datasets.dataset_orders:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
